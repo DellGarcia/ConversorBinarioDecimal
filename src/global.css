@@ -1,10 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    outline: 0;
-
-
-
 }
 
+body {
+    font: 400 14px Roboto, sans-serif;
+    background: royalblue;
+    -webkit-font-smoothing: antialiased;
+}
 
+/* Por padrao nao herdam a font do body*/
+input, button, textarea {
+    font: 400 18px Roboto, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background: #cccccc;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-right: 15px;
+}
+
+button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background: #c3c3c3;
+    border: 0;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
+    margin-top: 50px;
+}
